@@ -1,0 +1,13 @@
+.navbar{
+    background-color: gray !important;
+}
+body{
+    background-color: black;
+    color: white;
+}
+a, li{
+    color: white !important;
+}
+/* .col-xl-3{
+    color: white !important;
+} */
