@@ -1,0 +1,11 @@
+<script>
+  //regular experession start with //
+  //^ for 1st character ,//$ for last character
+  // 1 character = 1 square box []
+  //{1,4} use for range
+  // called boundary delimiter
+  var regex = /^[1-9][0-9]{5}$/;
+  var pincode = 414003;
+  var result = regex.test(pincode);
+  console.log(result);
+</script>

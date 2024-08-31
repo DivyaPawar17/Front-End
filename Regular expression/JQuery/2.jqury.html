@@ -1,0 +1,22 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<button>click</button>
+<p>Hello World</p>
+<script>
+  // start jquery using $ or jquery
+  //what is callback : callback it's a function which is passed as an argument to another function to perform some kind of actions
+  $("button").click(function () {
+    alert();
+    $("p").css("background","grey")
+     $("p").css("font-size","40px")
+      $("p").css("border","solid")
+      $("p").text("<b>xyz</b>")//not revelat html tag it print at it is 
+      $("p").html("<b>xyz</b>")
+      $("p").width(200).height(200)//changing the function or approach
+      $("p").animate({
+        "margin-left":"200px",
+        "border-radius":"20px",
+        "transform":"rotate(20deg)"//it is not work because css property which belongs to pixels only
+      },2000)
+
+  });
+</script>
