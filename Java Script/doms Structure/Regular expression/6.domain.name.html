@@ -1,0 +1,14 @@
+<!-- (username)(example.com)
+<(in).(com)
+(99 acres)(.co)(.in)
+(gmail).(co).(in)?
+(ask-to-resolve).(com) -->
+<!-- username@gmail.com -->
+<script>
+  var regex =
+    /^([a-zA-Z0-9]([a-zA-Z0-9\-]+)?[a-zA-Z0-9])\.([a-zA-Z]{2,})(\.[a-zA-Z]{2,})?$/; //? stands for optional part will be implemented
+  //+ stands for atleast one character
+  var username = "ashwini2gmail.com";
+  var result = regex.test(username);
+  console.log(result);
+</script>

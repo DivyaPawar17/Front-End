@@ -1,0 +1,12 @@
+<!-- what is closure in javascript -->
+<!-- curring effect -->
+<script>
+  function f1(a) {
+    return function (b) {
+      return function (c) {
+        console.log(a+b+c);
+      };
+    };
+  }
+  f1(100)(200)(300); //javascript currying effect  use nested function
+</script>

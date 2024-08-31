@@ -1,0 +1,18 @@
+<script>
+  var product = {
+    name: "T-Shirt",
+    price: 1000,
+    path: "https://turtle.in/cdn/shop/files/DSC_5974_360x.jpg?v=1715776342",
+    size: [" S " , " L " , " XL " , " XXL "]
+  };
+  console.log(product);
+  document.write(`
+  <div>
+    <img src="${product.path}"alt="">
+    <h2>${product.price}</h2>
+    <p>${product.name}</p>
+    <p>${product.size}</p>
+    <button>Add to cart</button>
+</div>
+`);
+</script>

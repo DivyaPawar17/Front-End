@@ -1,0 +1,49 @@
+<script>
+  var product = [
+    {
+      name: "T-Shirt",
+      price: 1000,
+      path: " https://turtle.in/cdn/shop/files/DSC_5974_360x.jpg?v=1715776342 ",
+      size: [" S ", " L ", " XL ", " XXL "],
+    },
+    {
+      name: "Shirt",
+      price: 1200,
+      path: " https://turtle.in/cdn/shop/files/DSC_5305_360x.jpg?v=1715764680 ",
+      size: [" S ", " L ", " XL ", " XXL "],
+    },
+    {
+      name: "Shirt",
+      price: 1800,
+      path: " https://turtle.in/cdn/shop/files/DSC_5489_360x.jpg?v=17157646112 ",
+      size: [" S ", " L ", " XL ", " XXL "],
+    },
+  ];
+  console.log(product);
+  var i = 0;
+  while (i < product.length) {
+    console.log(i, product[i]);
+
+    document.write(`
+    <div>
+    <img src="${product[i].path}"alt="">
+    <h2>${product[i].price}</h2>
+    <p>${product[i].name}</p>
+    <p>${product[i].size}</p>
+    <button> Add to cart </button>
+</div>
+    `);
+    i++;
+  }
+</script>
+<style>
+    div{
+        border: solid;
+        width: 150px;
+        float: left;
+        margin-right: 20px;
+    }
+    img{
+        width: 100%;
+    }
+</style>

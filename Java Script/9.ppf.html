@@ -1,0 +1,20 @@
+<script>
+  function ppfcalculator(amount, duration, roi) {
+    console.log("funcation call");
+    console.log(amount, duration, roi);
+     var openingBalance = 0;
+     
+     for (var i = 1; i <= duration; i++) {
+        var interest=(openingBalance+amount)*roi/100;
+        interest=Math.round(interest);
+     var closingBalance=openingBalance+amount+interest;
+      console.log(i, openingBalance,amount,interest,closingBalance)
+      document.write(`
+      <li>${i} ${openingBalance} ${amount} ${interest} ${closingBalance}</li>`)
+      openingBalance=closingBalance
+    }
+    // function definition
+  }
+  ppfcalculator(150000, 15, 7.1);
+  // this example belongs to named function
+</script>

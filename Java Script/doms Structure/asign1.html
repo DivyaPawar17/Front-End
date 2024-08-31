@@ -1,0 +1,16 @@
+<input type="text" class="x1c">
+<button onclick="f1()">convert</button>
+<p class="x2F"></p>
+<script>
+    var celsiusTemperature = 25;
+    console.log(celsiusTemperature)
+
+
+     var fahrenheit  = (celsiusTemperature * 9/5) + 32;
+     console.log(fahrenheit)
+
+    document.querySelector(".x1c").innerHTML=fahrenheit
+    function f1(){
+        document.querySelector(".x2F").innerHTML=fahrenheit
+    }
+</script>
