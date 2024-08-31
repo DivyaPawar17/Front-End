@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+}
+.container
+{
+    border: solid;
+    width: 1200px;
+    margin:auto;
+}
+.row{
+    display: flex;
+    flex-wrap:wrap;
+}
+.col-1{
+    width: 8.3333%; 
+    border: solid;
+}
+.col-2{
+    width:16.6666% ;
+    border: solid;
+}
+.col-3{
+    width: 25%;
+    border: solid;
+}
+.col-4{
+    width: 33.33%;
+    border: solid;
+}
+.col-5{
+    width: 50%;
+    border: solid;
+}
+.col-6{
+    width: 100%;
+    border: solid;
+}
+.col-9{
+    width: 75%;
+    border: solid;
+}
